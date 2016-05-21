@@ -1,1 +1,1 @@
-React Starter Kit
+Pomodoro Clock and Stopwatch app
