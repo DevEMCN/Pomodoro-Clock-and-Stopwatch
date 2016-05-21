@@ -8,10 +8,10 @@ var Nav = () => {
           <ul className="menu">
             <li className="menu-text">Pomodoro Clock and Stopwatch</li>
             <li>
-              <IndexLink to="/" activeClassName="active">Pomodoro Clock</IndexLink>
+              <IndexLink to="/" activeClassName="active-link">Pomodoro Clock</IndexLink>
             </li>
             <li>
-              <Link to="" activeClassName="active">Stopwatch</Link>
+              <Link to="/stopwatch" activeClassName="active-link">Stopwatch</Link>
             </li>
           </ul>
         </div>
