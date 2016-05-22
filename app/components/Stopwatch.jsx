@@ -1,4 +1,5 @@
 var React = require('react');
+var Clock = require('Clock');
 
 var Stopwatch = React.createClass(
 {
@@ -6,7 +7,7 @@ var Stopwatch = React.createClass(
   {
     return(
       <div>
-        <p>Stopwatch</p>
+        <Clock totalSeconds={129}/>
       </div>
     );
   }
