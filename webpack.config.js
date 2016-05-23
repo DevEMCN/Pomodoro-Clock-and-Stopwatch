@@ -26,6 +26,7 @@ module.exports = {
       Nav: 'app/components/Nav.jsx',
       PomodoroClock: 'app/components/PomodoroClock.jsx',
       PomodoroControls: 'app/components/PomodoroControls.jsx',
+      Controls: 'app/components/Controls.jsx',
       Stopwatch: 'app/components/Stopwatch.jsx',
       Clock: 'app/components/Clock.jsx',
       applicationStyles: 'app/Styles/app.scss'
