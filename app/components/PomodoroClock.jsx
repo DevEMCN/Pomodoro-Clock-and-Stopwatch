@@ -1,11 +1,25 @@
 var React = require('react');
+var Clock = require('Clock');
+var PomodoroControls = require('PomodoroControls');
+
 var PomodoroClock = React.createClass(
 {
+  getInitialState: function()
+  {
+    return {count: 0};
+  },
+  handleSetCountdown: function(seconds){
+    this.setState({
+      count: seconds
+    });
+  },
   render: function()
   {
+    var {count} = this.state;
     return(
       <div>
-        <p>PomodoroClock</p>
+        <Clock totalSeconds={count}/>
+        <PomodoroControls onSetCountdown={this.handleSetCountdown}/>
       </div>
     );
   }
