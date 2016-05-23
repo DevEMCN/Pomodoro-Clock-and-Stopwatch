@@ -2,8 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 var Main = require('Main');
-var Stopwatch = require('Stopwatch');
-var PomodoroClock = require('PomodoroClock');
+var Timer = require('Timer');
+var Countdown = require('Countdown');
 
 
 // Load foundation
@@ -16,8 +16,8 @@ require('style!css!sass!applicationStyles')
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-      <IndexRoute component={PomodoroClock}/>
-      <Route path="stopwatch" component={Stopwatch}/>
+      <IndexRoute component={Countdown}/>
+      <Route path="stopwatch" component={Timer}/>
     </Route>
   </Router>,
   document.getElementById('app')

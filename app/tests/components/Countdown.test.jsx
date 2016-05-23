@@ -4,16 +4,16 @@ var expect = require('expect');
 var TestUtils = require('react-addons-test-utils');
 var $ = require('jQuery');
 
-var PomodoroClock = require('PomodoroClock');
+var Countdown = require('Countdown');
 
-describe('PomodoroClock', () => {
+describe('Countdown', () => {
   it('should exists', () => {
-      expect(PomodoroClock).toExist();
+      expect(Countdown).toExist();
   });
 
   describe('handleSetCountdown', () => {
     it('should set state to started and countdown', (done) => {
-        var countdown = TestUtils.renderIntoDocument(<PomodoroClock/>);
+        var countdown = TestUtils.renderIntoDocument(<Countdown/>);
         countdown.handleSetCountdown(10);
 
         expect(countdown.state.count).toBe(10);
@@ -26,7 +26,7 @@ describe('PomodoroClock', () => {
     });
 
     it('should set state to started and countdown', (done) => {
-        var countdown = TestUtils.renderIntoDocument(<PomodoroClock/>);
+        var countdown = TestUtils.renderIntoDocument(<Countdown/>);
         countdown.handleSetCountdown(1);
 
         setTimeout(() => {

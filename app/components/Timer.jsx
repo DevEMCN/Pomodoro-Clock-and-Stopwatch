@@ -1,7 +1,7 @@
 var React = require('react');
 var Clock = require('Clock');
 
-var Stopwatch = React.createClass(
+var Timer = React.createClass(
 {
   render: function()
   {
@@ -14,4 +14,4 @@ var Stopwatch = React.createClass(
 });
 
 
-module.exports = Stopwatch;
+module.exports = Timer;

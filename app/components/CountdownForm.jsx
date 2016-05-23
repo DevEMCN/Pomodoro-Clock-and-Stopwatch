@@ -1,6 +1,6 @@
 var React = require('react');
 
-var PomodoroControls = React.createClass({
+var CountdownForm = React.createClass({
   onSubmit: function(e)
   {
     e.preventDefault();
@@ -25,4 +25,4 @@ var PomodoroControls = React.createClass({
   }
 });
 
-module.exports = PomodoroControls;
+module.exports = CountdownForm;

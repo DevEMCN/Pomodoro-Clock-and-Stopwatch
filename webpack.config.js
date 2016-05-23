@@ -24,10 +24,10 @@ module.exports = {
     alias: {
       Main: 'app/components/Main.jsx',
       Nav: 'app/components/Nav.jsx',
-      PomodoroClock: 'app/components/PomodoroClock.jsx',
-      PomodoroControls: 'app/components/PomodoroControls.jsx',
+      Countdown: 'app/components/Countdown.jsx',
+      CountdownForm: 'app/components/CountdownForm.jsx',
       Controls: 'app/components/Controls.jsx',
-      Stopwatch: 'app/components/Stopwatch.jsx',
+      Timer: 'app/components/Timer.jsx',
       Clock: 'app/components/Clock.jsx',
       applicationStyles: 'app/Styles/app.scss'
     },

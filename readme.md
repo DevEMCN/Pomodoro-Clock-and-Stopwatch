@@ -1,1 +1,1 @@
-Pomodoro Clock and Stopwatch app
+React Timer App

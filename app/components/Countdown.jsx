@@ -1,9 +1,9 @@
 var React = require('react');
 var Clock = require('Clock');
-var PomodoroControls = require('PomodoroControls');
+var CountdownForm = require('CountdownForm');
 var Controls = require('Controls');
 
-var PomodoroClock = React.createClass(
+var Countdown = React.createClass(
 {
   getInitialState: function()
   {
@@ -59,7 +59,7 @@ var PomodoroClock = React.createClass(
         return <Controls countdownStatus={countdownStatus} onStatusChange={this.handleStatusChange}/>
       }
       else {
-        return <PomodoroControls onSetCountdown={this.handleSetCountdown}/>
+        return <CountdownForm onSetCountdown={this.handleSetCountdown}/>
       }
     };
     return(
@@ -72,4 +72,4 @@ var PomodoroClock = React.createClass(
 });
 
 
-module.exports = PomodoroClock;
+module.exports = Countdown;

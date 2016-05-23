@@ -4,19 +4,19 @@ var expect = require('expect');
 var TestUtils = require('react-addons-test-utils');
 var $ = require('jQuery');
 
-var PomodoroControls = require('PomodoroControls');
+var CountdownForm = require('CountdownForm');
 
-describe('PomodoroControls', () => {
+describe('CountdownForm', () => {
   it('should exists', () => {
-      expect(PomodoroControls).toExist();
+      expect(CountdownForm).toExist();
   });
 
   it('should call onSetCountdown if valid seconds entered', () => {
     var spy = expect.createSpy();
-    var pomodoroControls = TestUtils.renderIntoDocument(<PomodoroControls onSetCountdown={spy}/>);
-    var $el = $(ReactDOM.findDOMNode(pomodoroControls));
+    var countdownForm = TestUtils.renderIntoDocument(<CountdownForm onSetCountdown={spy}/>);
+    var $el = $(ReactDOM.findDOMNode(countdownForm));
 
-    pomodoroControls.refs.seconds.value = '109';
+    countdownForm.refs.seconds.value = '109';
 
     TestUtils.Simulate.submit($el.find('form')[0]);
 
@@ -25,10 +25,10 @@ describe('PomodoroControls', () => {
 
   it('should call onSetCountdown if invalid data entered', () => {
     var spy = expect.createSpy();
-    var pomodoroControls = TestUtils.renderIntoDocument(<PomodoroControls onSetCountdown={spy}/>);
-    var $el = $(ReactDOM.findDOMNode(pomodoroControls));
+    var countdownForm = TestUtils.renderIntoDocument(<CountdownForm onSetCountdown={spy}/>);
+    var $el = $(ReactDOM.findDOMNode(countdownForm));
 
-    pomodoroControls.refs.seconds.value = '109b';
+    countdownForm.refs.seconds.value = '109b';
 
     TestUtils.Simulate.submit($el.find('form')[0]);
 

@@ -6,12 +6,12 @@ var Nav = () => {
       <div className="top-bar">
         <div className="top-bar-left">
           <ul className="menu">
-            <li className="menu-text">Pomodoro Clock and Stopwatch</li>
+            <li className="menu-text">React Timer App</li>
             <li>
-              <IndexLink to="/" activeClassName="active-link">Pomodoro Clock</IndexLink>
+              <IndexLink to="/" activeClassName="active-link">Countdown</IndexLink>
             </li>
             <li>
-              <Link to="/stopwatch" activeClassName="active-link">Stopwatch</Link>
+              <Link to="/timer" activeClassName="active-link">Timer</Link>
             </li>
           </ul>
         </div>
