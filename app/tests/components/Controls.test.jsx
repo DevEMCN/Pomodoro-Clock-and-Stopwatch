@@ -22,7 +22,7 @@ describe('Controls', () => {
     it('should render resume when paused', () => {
       var controls = TestUtils.renderIntoDocument(<Controls countdownStatus='paused'/>);
       var $el = $(ReactDOM.findDOMNode(controls));
-      var $pauseButton = $el.find('button:contains(Resume)');
+      var $pauseButton = $el.find('button:contains(Start)');
 
       expect($pauseButton.length).toBe(1);
     });

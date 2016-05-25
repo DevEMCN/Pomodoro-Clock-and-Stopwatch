@@ -10,7 +10,7 @@ var Controls = React.createClass({
       this.props.onStatusChange(newStatus);
     }
   },
-  
+
   render: function()
   {
     var {countdownStatus} = this.props;
@@ -20,9 +20,9 @@ var Controls = React.createClass({
       {
         return <button className="button secondary" onClick={this.onStatusChange('paused')}>Pause</button>
       }
-      else if(countdownStatus === 'paused')
+      else (countdownStatus === 'paused')
       {
-        return <button className="button primary" onClick ={this.onStatusChange('started')}>Resume</button>
+        return <button className="button primary" onClick ={this.onStatusChange('started')}>Start</button>
       }
     }
 
